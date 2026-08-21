@@ -123,14 +123,14 @@ footer{min-height:120px;align-items:center;background:var(--accent);color:#fff;b
 .home-page .site-header nav a{border-color:#292929}
 .showcase-shell{position:relative;background:#050505;color:#fff;isolation:isolate}
 .showcase-shell .kinetic-showcase{height:min(760px,72vw);min-height:600px}
-.showcase-filters{position:absolute;z-index:12;top:auto;bottom:24px;left:3.2vw;width:min(440px,46vw);border-color:#414141;color:#fff;background:#050505d9;backdrop-filter:blur(10px)}
+.showcase-filters{position:absolute;z-index:12;top:auto;bottom:24px;left:50%;width:min(440px,46vw);transform:translateX(-50%);border-color:#414141;color:#fff;background:#050505d9;backdrop-filter:blur(10px)}
 .showcase-filters button{border-color:#414141}
 .home-works-title{min-height:auto;padding:11vh 3.2vw 8vh;display:block}
 .home-works-title h1{margin:5vh 0 0}
 @media(max-width:700px){
   .home-page .site-header nav{background:#050505;color:#fff;border-color:#292929}
   .showcase-shell .kinetic-showcase{height:560px;min-height:0}
-  .showcase-filters{top:auto;bottom:18px;left:20px;right:20px;width:auto;background:#050505e8}
+  .showcase-filters{top:auto;bottom:18px;left:50%;right:auto;width:calc(100% - 40px);background:#050505e8}
   .showcase-filters button{padding:15px 10px}
   .home-works-title{padding:72px 20px 60px}
   .home-works-title h1{margin:44px 0 0}
