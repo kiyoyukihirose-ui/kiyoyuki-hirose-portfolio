@@ -3,62 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Kiyoyuki Hirose — Web Designer。LP・バナー・ロゴの制作実績。">
-  <title>Kiyoyuki Hirose — Works</title>
-  <link rel="stylesheet" href="assets/style.css?v=20260821-2">
+  <meta name="description" content="Kiyoyuki Hirose — LP・広告クリエイティブを中心に、訴求整理からデザイン・実装まで対応するWebデザイナーのポートフォリオ。">
+  <meta property="og:title" content="Kiyoyuki Hirose — Web Designer">
+  <meta property="og:description" content="LP・広告クリエイティブを中心に、訴求整理からデザイン・実装まで。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/thumbs/apple-gift-top.webp">
+  <link rel="canonical" href="https://kiyoyukihirose-ui.github.io/kiyoyuki-hirose-portfolio/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <title>Kiyoyuki Hirose — Web Designer</title>
+  <link rel="stylesheet" href="assets/style.css?v=20260828-1">
 </head>
 <body id="top" class="home-page">
+  <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header">
-    <a class="wordmark" href="index.html">kiyoyuki hirose portfolio</a>
-    <button class="menu-btn" aria-expanded="false" aria-controls="nav">メニュー</button>
-    <nav id="nav"><a aria-current="page" href="#works">Works</a><a href="#about">私について</a></nav>
+    <a class="wordmark" href="index.html" aria-label="Kiyoyuki Hirose ポートフォリオ トップ">kiyoyuki hirose portfolio</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">メニュー</button>
+    <nav id="nav" aria-label="メインナビゲーション">
+      <a href="#selected">Selected Works</a>
+      <a href="#works">制作実績</a>
+      <a href="#about">私について</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="showcase-shell" id="works" aria-label="Selected Works">
+  <main id="main">
+    <section class="selected-section" id="selected" aria-labelledby="selected-title">
+      <div class="section-heading inverse">
+        <div>
+          <p class="eyebrow">SELECTED WORKS / 2025</p>
+          <h2 id="selected-title">主な制作実績</h2>
+        </div>
+        <p>LPを中心に、課題整理からデザインまで担当した案件を選定しています。</p>
+      </div>
       <section class="kinetic-showcase" data-kinetic-showcase aria-label="注目の制作実績"></section>
-      <div class="filters showcase-filters" aria-label="作品カテゴリ">
-        <button data-filter="lp">LP <sup>06</sup></button>
-        <button type="button" data-show-banner aria-pressed="false">Banner <sup>25</sup></button>
-        <button data-filter="other">Other <sup>01</sup></button>
+      <div class="showcase-category" aria-label="ショーケースのカテゴリー">
+        <button class="active" type="button" data-showcase-filter="lp" aria-pressed="true">LP <sup>06</sup></button>
+        <button type="button" data-showcase-filter="banner" aria-pressed="false">Banner <sup>25</sup></button>
+        <button type="button" data-showcase-filter="other" aria-pressed="false">Other <sup>01</sup></button>
       </div>
     </section>
 
-    <section class="page-title home-works-title">
-      <p class="eyebrow">KIYOYUKI HIROSE / WEB DESIGNER</p>
-      <h1>Works</h1>
+    <section class="all-works" id="works" aria-labelledby="works-title">
+      <div class="section-heading works-heading">
+        <div>
+          <p class="eyebrow">ALL WORKS / 2022—2025</p>
+          <h2 id="works-title">制作実績</h2>
+        </div>
+        <p>カテゴリーを選択すると、同じページ内で表示を切り替えられます。</p>
+      </div>
+      <div class="filters archive-filters" data-work-filters aria-label="作品カテゴリー">
+        <button class="active" type="button" data-filter="lp" aria-pressed="true">LP <sup>06</sup></button>
+        <button type="button" data-show-banner aria-pressed="false">Banner <sup>25</sup></button>
+        <button type="button" data-filter="other" aria-pressed="false">Other <sup>01</sup></button>
+      </div>
+
+      <div class="work-grid" aria-live="polite">
+        <a class="work-card work-card-feature" data-category="lp" href="project.html">
+          <div class="work-visual work-visual-collage">
+            <img src="assets/images/thumbs/apple-gift-top.webp" width="1440" height="900" alt="即日アリアちゃん LPのファーストビュー">
+            <img src="assets/images/thumbs/apple-gift-middle.webp" width="1440" height="900" loading="lazy" alt="即日アリアちゃん LPの料金訴求セクション">
+          </div>
+          <div class="work-meta"><div><p>LANDING PAGE / 2025</p><h3>即日アリアちゃん</h3></div><ul><li>STRUCTURE</li><li>DESIGN</li><li>PC / SP</li></ul></div>
+        </a>
+        <a class="work-card" data-category="lp" href="project-aria.html">
+          <div class="work-visual work-visual-portrait"><img src="assets/images/thumbs/aria-recruit-top.webp" width="900" height="1125" loading="lazy" alt="Aria外国人向け採用LPのファーストビュー"></div>
+          <div class="work-meta"><div><p>RECRUITMENT LP / 2025</p><h3>Aria Global Recruitment</h3></div><ul><li>STRUCTURE</li><li>DESIGN</li><li>SP / JP・EN</li></ul></div>
+        </a>
+        <a class="work-card" data-category="lp" href="project-abies.html">
+          <div class="work-visual"><img src="assets/images/thumbs/abies-careers-top.webp" width="1440" height="900" loading="lazy" alt="アビエス法律事務所 採用サイトのファーストビュー"></div>
+          <div class="work-meta"><div><p>RECRUITMENT WEBSITE / 2025</p><h3>Abies Recruitment</h3></div><ul><li>STRUCTURE</li><li>DESIGN</li><li>PC / SP</li></ul></div>
+        </a>
+        <a class="work-card work-card-portrait" data-category="lp" href="project-factoring.html">
+          <div class="work-visual work-visual-portrait"><img src="assets/images/thumbs/factoring-top.webp" width="900" height="1125" loading="lazy" alt="ファクタリング事業 採用LPのファーストビュー"></div>
+          <div class="work-meta"><div><p>RECRUITMENT LP / 2025</p><h3>Factoring Recruitment</h3></div><ul><li>STRUCTURE</li><li>DESIGN</li><li>SP</li></ul></div>
+        </a>
+        <a class="work-card" data-category="lp" href="project-ranking.html">
+          <div class="work-visual"><img src="assets/images/thumbs/apple-ranking-top.webp" width="1440" height="900" loading="lazy" alt="Appleギフト券比較ランキングLPのファーストビュー"></div>
+          <div class="work-meta"><div><p>COMPARISON LP / 2025</p><h3>Apple Gift Comparison</h3></div><ul><li>STRUCTURE</li><li>DESIGN</li><li>PC / SP</li></ul></div>
+        </a>
+        <a class="work-card work-card-portrait" data-category="lp" href="project-apple-speed.html">
+          <div class="work-visual work-visual-portrait"><img src="assets/images/thumbs/apple-speed-top.webp" width="900" height="1125" loading="lazy" alt="Appleギフトカード最短3分買取LPのファーストビュー"></div>
+          <div class="work-meta"><div><p>SERVICE LP / 2025</p><h3>Sokujitsu Aria — Speed Purchase</h3></div><ul><li>STRUCTURE</li><li>DESIGN</li><li>SP</li></ul></div>
+        </a>
+        <article class="work-card other-work hidden" data-category="other">
+          <div class="work-visual other-monogram"><img src="assets/images/other-monogram.svg" width="1200" height="1200" loading="lazy" alt="ロゴ・その他の制作実績"></div>
+          <div class="work-meta"><div><p>OTHER / 2022</p><h3>Logo / Other</h3></div><ul><li>GRAPHIC</li><li>IDENTITY</li></ul></div>
+        </article>
+      </div>
+      <section class="inline-banner-collection" id="banner-collection" data-inline-banner-collection hidden aria-label="Banner Collection"></section>
     </section>
 
-    <section class="work-grid" aria-label="制作実績一覧">
-      <a class="work-card wide" data-category="lp" href="project.html"><div class="visual visual-lp"><img src="assets/images/apple-gift-lp-pc.png" alt="即日アリアちゃん ランディングページ"></div><div class="work-meta"><h2>即日アリアちゃん</h2><p>LP / 2025</p></div></a>
-      <a class="work-card" data-category="lp" href="project-aria.html"><div class="visual visual-lp visual-aria-thumb"><img src="assets/images/aria-recruit-en.png" alt="Aria 外国人向け採用ランディングページ"></div><div class="work-meta"><h2>Aria Global Recruitment</h2><p>LP / 2025</p></div></a>
-      <a class="work-card" data-category="banner" href="banner.html"><div class="visual visual-image"><img src="assets/images/law-office-banner.png" alt="アビエス法律事務所 バナー制作"></div><div class="work-meta"><h2>Abies Law Office</h2><p>Banner / 2025</p></div></a>
-      <a class="work-card" data-category="lp" href="project-abies.html"><div class="visual visual-lp visual-abies-thumb"><img src="assets/images/abies-careers-top-pc.png" alt="アビエス法律事務所 採用サイト"></div><div class="work-meta"><h2>Abies Recruitment</h2><p>LP / 2025</p></div></a>
-      <a class="work-card" data-category="lp" href="project-factoring.html"><div class="visual visual-lp"><img src="assets/images/aria-factoring-sp.png" alt="ファクタリング事業 採用LP"></div><div class="work-meta"><h2>Factoring Recruitment</h2><p>LP / 2025</p></div></a>
-      <a class="work-card" data-category="lp" href="project-ranking.html"><div class="visual visual-lp"><img src="assets/images/apple-ranking-pc.png" alt="Appleギフト券買取サイト比較ランキングLP"></div><div class="work-meta"><h2>Apple Gift Comparison</h2><p>LP / 2025</p></div></a>
-      <a class="work-card" data-category="lp" href="project-apple-speed.html"><div class="visual visual-lp"><img src="assets/images/apple-speed-sp.png" alt="即日アリアちゃん 最短3分買取LP"></div><div class="work-meta"><h2>Sokujitsu Aria — Speed Purchase</h2><p>LP / 2025</p></div></a>
-      <a class="work-card" data-category="banner" href="banner.html"><div class="visual visual-jewelry"><span>LINE<br>OF LIGHT</span><small>ATELIER N°8</small></div><div class="work-meta"><h2>Banner Collection</h2><p>Banner / 2024</p></div></a>
-      <a class="work-card" data-category="other" href="#about"><div class="visual visual-logo"><span>O / A</span><small>LOGO / OTHER</small></div><div class="work-meta"><h2>Logo / Other</h2><p>Other / 2022</p></div></a>
-    </section>
-    <section class="inline-banner-collection" id="banner-collection" data-inline-banner-collection hidden aria-label="Banner Collection"></section>
-
-    <section class="section about home-about" id="about">
-      <p class="eyebrow">ABOUT</p>
-      <div>
-        <h2>Kiyoyuki<br>Hirose</h2>
-        <p>東京を拠点に活動するWebデザイナーです。</p>
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-intro">
+        <p class="eyebrow">ABOUT</p>
+        <h2 id="about-title">Kiyoyuki<br>Hirose</h2>
+      </div>
+      <div class="about-copy">
+        <p class="about-lead">東京を拠点に活動するWebデザイナーです。</p>
         <p>LP・バナー・ロゴを中心に、情報の優先順位を整理し、ブランドの魅力がまっすぐ伝わるデザインを制作しています。PCからSPまで一貫した見え方と、作品そのものが主役になる余白設計を大切にしています。</p>
-        <dl>
-          <div><dt>EXPERTISE</dt><dd>Landing Page<br>Banner Design<br>Logo / Branding</dd></div>
-          <div><dt>TOOLS</dt><dd>Figma<br>Photoshop<br>Illustrator</dd></div>
+        <dl class="about-facts">
+          <div><dt>得意領域</dt><dd>広告LP / 採用LP<br>Banner Design</dd></div>
+          <div><dt>担当可能範囲</dt><dd>訴求整理 / 構成設計<br>Web Design / Coding</dd></div>
+          <div><dt>使用ツール</dt><dd>Figma / Photoshop<br>Illustrator</dd></div>
+          <div><dt>実装</dt><dd>HTML / CSS<br>WordPress</dd></div>
         </dl>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">CONTACT</p>
+      <div>
+        <h2 id="contact-title">LP・広告制作について、<br>ご相談ください。</h2>
+        <p>制作会社・広告代理店・事業会社・フリーランスエージェントからのご相談を受け付けています。</p>
+        <a href="https://github.com/kiyoyukihirose-ui" target="_blank" rel="noopener">GitHubプロフィールから連絡する <span>↗</span></a>
       </div>
     </section>
   </main>
 
-  <footer><p>© 2025 KIYOYUKI HIROSE</p><p>TOKYO / JAPAN</p><a href="#top">ページ上部へ ↑</a></footer>
-  <script src="assets/kinetic-showcase.js?v=20260819-3"></script>
-  <script src="assets/banner-collection.js"></script>
-  <script src="assets/script.js"></script>
+  <footer>
+    <p>© 2025 KIYOYUKI HIROSE</p>
+    <p>WEB DESIGN / TOKYO</p>
+    <a href="#top">ページ上部へ ↑</a>
+  </footer>
+  <script src="assets/kinetic-showcase.js?v=20260828-1"></script>
+  <script src="assets/banner-collection.js?v=20260828-1"></script>
+  <script src="assets/script.js?v=20260828-1"></script>
 </body>
 </html>
